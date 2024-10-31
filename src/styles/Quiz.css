@@ -1,0 +1,164 @@
+.quiz-container {
+    margin: 0px auto;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #eeeeee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bbbbbb;
+
+}
+
+.text-outline {
+    text-shadow:
+    -3px -3px 0 white,
+     3px -3px 0 white,
+    -3px  3px 0 white,
+     3px  3px 0 white;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.answer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.answer-item {
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-item:hover {
+    background-color: #e0e0e0;
+}
+
+.results {
+    margin-top: 30px;
+}
+
+.result-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    list-style: none;
+}
+
+
+.correct {
+    color: green;
+    margin-left: 10px;
+}
+
+.incorrect {
+    color: red;
+    margin-left: 10px;
+}
+
+.try-again-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.try-again-button:hover {
+    background-color: #0056b3;
+}
+
+.category-selection {
+    text-align: center;
+}
+
+.category-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-card {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.category-image-container {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures image doesn’t exceed container */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #e2e2e2; /* Optional: add a background to emphasize padding */
+}
+
+.category-image {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto; /* Shrinks width as necessary to keep aspect ratio */
+    height: auto;
+    object-fit: contain; /* Ensures image fits within constraints */
+    border-radius: 4px;
+}
+
+.difficulty-button.selected {
+    background-color: #388E3C;
+}
+
+/* Tablet view */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .quiz-container {
+        width: 80%;
+        width: 600px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Desktop view */
+@media (min-width: 1025px) {
+    .quiz-container {
+        width: 60%;
+        width: 800px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
