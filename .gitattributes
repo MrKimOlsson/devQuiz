@@ -1,0 +1,9 @@
+# Set the default behavior, text files will have LF in the repository
+* text=auto
+
+# Explicitly set line endings for common files
+*.js text eol=lf
+*.ts text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf

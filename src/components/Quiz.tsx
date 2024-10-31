@@ -118,7 +118,7 @@ const Quiz: React.FC<QuizProps> = ({ category, difficulty, onRestart }) => {
                             })}
                         </ul>
                         <button onClick={handleTryAgain} className="try-again-button">Try Again</button>
-                        <button onClick={handleRestart} className="restart-button">Restart Quiz</button> {/* Restart Button */}
+                        <button onClick={handleRestart} className="restart-button">Restart Quiz</button>
                     </motion.div>
                 ) : (
                     <motion.div

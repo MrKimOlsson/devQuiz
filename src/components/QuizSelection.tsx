@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Quiz from './Quiz';
 
 // Import images from the assets folder
-import JavaScriptImage from '../assets/js.png';
-import HTMLImage from '../assets/html.png';
-import PHPImage from '../assets/php.png';
-import LaravelImage from '../assets/laravel.png';
-import PythonImage from '../assets/python.png';
-import DockerImage from '../assets/docker.png';
+import JavaScriptImage from '@assets/js.png';
+import HTMLImage from '@assets/html.png';
+import PHPImage from '@assets/php.png';
+import LaravelImage from '@assets/laravel.png';
+import PythonImage from '@assets/python.png';
+import DockerImage from '@assets/docker.png';
 
 // Categories
 type Category = 'JavaScript' | 'HTML' | 'PHP' | 'Laravel' | 'Python' | 'Docker';

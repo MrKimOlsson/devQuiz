@@ -12,7 +12,6 @@ const fetchQuestions = async (category: string, difficulty: string, limit: numbe
     return data;
 };
 
-// quizService.ts
 
 const fetchAvailableDifficulties = async (category: string): Promise<string[]> => {
     const response = await fetch(`${API_URL}?apiKey=${import.meta.env.VITE_QUIZ_API_KEY}&category=${category}`);

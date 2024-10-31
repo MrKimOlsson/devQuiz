@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-image: url('./assets/bg7.png');
+  background-image: url('../src/assets/bg7.png');
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
